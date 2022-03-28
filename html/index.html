@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Geiger counter</title>
+<script src="geiger.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<h1>Geiger counter</h1>
+	<p>Geiger counter is connected somewhere in Nusle district in Prague, Czechia. The connected probe is Russian SBT-10, operating at ~380V, capable of detecting alpha, beta and gamma particles. The tube's own background is around ~4CPS = 240 CPM. Times are in UTC.</p>
+	<p>Important: If you see a spike, don't panic! Most likely it means there's a loose wire somewhere, or I'm measuring something (legal! like a piece of pitchblende, uranium tableware etc...).</p>
+
+	<h2>Realtime data</h2>
+	<div id="rtdata"></div>
+	<h2>Daily data</h2>
+	<h3>Last 1 hour</h3>
+	<img src="img/geiger-h.png" class="autorefresh" />
+	<h3>Last 1 day</h3>
+	<img src="img/geiger-d.png" class="autorefresh" />
+	<h3>Last 1 week</h3>
+	<img src="img/geiger-w.png" class="autorefresh" />
+	<h3>Last 1 month</h3>
+	<img src="img/geiger-m.png" class="autorefresh" />
+	<h3>Last 1 year</h3>
+	<img src="img/geiger-y.png" class="autorefresh" />
+
+</body>
+
+</html> 

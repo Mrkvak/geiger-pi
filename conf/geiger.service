@@ -1,0 +1,12 @@
+[Unit]
+Description=Geiger counter
+After=network-online.target
+
+[Service]
+Type=simple
+#PIDFile=/run/geiger.pid
+ExecStart=/usr/local/sbin/geiger.py
+Restart=on-failure
+RestartSec=10000ms
+[Install]
+WantedBy=multi-user.target
