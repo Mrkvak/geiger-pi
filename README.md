@@ -18,5 +18,4 @@ $HTTP["url"] =~ "^/cgi-bin/" {
         alias.url += ( "/cgi-bin/" => "/usr/local/lib/cgi-bin/" )
 }
 alias.url += ( "/geiger/img" => "/run/geiger/img/" )
-cgi.assign = ( ".cgi" => "" )
 ```
