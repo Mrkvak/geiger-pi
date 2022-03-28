@@ -19,3 +19,6 @@ $HTTP["url"] =~ "^/cgi-bin/" {
 }
 alias.url += ( "/geiger/img" => "/run/geiger/img/" )
 ```
+
+## Viewing interface screenshot
+![screenshot](geiger.png)
