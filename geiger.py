@@ -61,6 +61,7 @@ def on_connect(client, userdata, flags, rc):
 
 def on_disconnect(client, userdata, rc):
     eprint("Disconnected with return code: "+str(rc))
+    mqtt_connected = False
 
 def on_log(client, userdata, level, buf):
     eprint("Log message: "+str(level)+", "+userdata+", "+buf)
